@@ -815,7 +815,7 @@ class ArrowGroup extends Sprite
     
     this.rightArrow = this.addChild(this.arrowSpritePool.obtain({game: this.game, type: Sprite.SPRITE_SHEET,
         frames: "rightArrow",
-        y: (this.game.gameWorld.yTiles - 1) * this.game.gameWorld.tileY ,x: xPad, 
+        y: (this.game.gameWorld.yTiles - 1) * this.game.gameWorld.tileY ,x: this.game.gameWorld.tileX + xPad, 
         direction: Direction.RIGHT, master: true}));
    
     this.upArrow = this.addChild(this.arrowSpritePool.obtain({game: this.game, type: Sprite.SPRITE_SHEET, frames: "upArrow", 
@@ -823,7 +823,7 @@ class ArrowGroup extends Sprite
         direction: Direction.UP, master: true}));
   
     this.leftArrow = this.addChild(this.arrowSpritePool.obtain({game: this.game, type: Sprite.SPRITE_SHEET, frames: "leftArrow",
-        y: (this.game.gameWorld.yTiles - 1) * this.game.gameWorld.tileY , x: this.game.gameWorld.tileX + xPad,
+        y: (this.game.gameWorld.yTiles - 1) * this.game.gameWorld.tileY ,x: xPad,
         direction: Direction.LEFT, master: true}));
     
     this.downArrow = this.addChild(this.arrowSpritePool.obtain({game: this.game, type: Sprite.SPRITE_SHEET, frames: "downArrow",
